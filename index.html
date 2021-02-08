@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<style>
+    body {
+        background-color: #ffffff;
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        color: #222;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0px;
+    }
+    #topbar {
+        padding: 6px;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        flex-shrink: 0;
+        box-sizing: border-box;
+    }
+    #topbarright {
+        min-width: auto;
+        padding: 6px;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    #googlecontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 92px;
+        max-height: 290px;
+        height: 560px;
+        flex-shrink: 0;
+    }
+    .googlelogo {
+        max-height: 92px;
+        height: 100%;
+        margin-top: auto;
+    }
+    #searchbox {
+        padding: 20px;
+        max-height: 160px;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #searchbar {
+        align-items: center;
+        width: auto;
+        max-width: 584px;
+        border: 1px solid #dfe1e5;
+        box-shadow: none;
+        border-radius: 24px;
+        height: 44px;
+        width: 100%;
+    }
+    #searchbar:hover {
+        box-shadow: 0 1px 6px rgb(32 33 36 / 28%);;
+    }
+    .searchbutton {
+        flex-direction: column;
+
+    }
+    #clicksearch {
+        border: none;
+        padding: 0;
+        margin: 0 32px 0 32px;
+        height: 34px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        flex: 1;
+        flex-wrap: wrap;
+    }
+    input:focus {
+        outline: none;
+    }
+    a {
+        text-decoration: none;
+        color: #222;
+        padding: 5px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .about {
+        margin-left: 15px;
+        margin: 0 5px;
+    }
+</style>
+
+<head></head>
+<body>
+    <div id="topbar">
+        <a class="about" href="www.google.com">About</a>
+        <a href="www.google.com">Store</a>
+        <div id="topbarright">
+            <a href="www.google.com">Gmail</a>
+            <a href="www.google.com">Images</a>
+            <button>Sign in</button>
+        </div>
+    </div>
+    <div id="googlecontainer">
+        <img class="googlelogo" alt="Google Logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        height="92"; width="272">
+    </div>
+    <div id="searchbox">
+        <form id="searchbar" action="/search">
+            <input id="clicksearch"type="text">
+        </form>
+        <button class="searchbutton">Google Search</button>
+        <button class="searchbutton">I'm Feeling Lucky</button>
+    </div>
+</body>
